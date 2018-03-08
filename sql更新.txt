@@ -1,1 +1,3 @@
 /*[14:11:11][1061 ms]*/ ALTER TABLE `tracker_test`.`TUser` ADD COLUMN `login_err_count` INT DEFAULT '0' NULL COMMENT '登录失败次数' AFTER `mark`, ADD COLUMN `login_limit_time` DATETIME NULL COMMENT '登录失败后限制登录时间' AFTER `login_err_count`; 
+
+/*[14:25:11][ 484 ms]*/ ALTER TABLE `tracker_test`.`org` ADD COLUMN `api_address` VARCHAR(50) NULL AFTER `create_time`; 
